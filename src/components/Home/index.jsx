@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     getEpisode(episodeNum).then((ans) => setCharacters(ans));
-  }, [episodeNum]);
+  }, [episodeNum, characters]);
 
   const clickHandler = (e) => {
     let a = Number(refInput.current.value);
